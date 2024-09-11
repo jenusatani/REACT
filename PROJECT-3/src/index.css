@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: black;
+}
+.main{
+  width: 600px;
+  height: 80vh;
+  display: flex;
+  /* background-color: red; */
+  background-color: rgba(195, 199, 202, 0.879);
+}
+
+
+
+.second-part{
+  /* background-color: red; */
+ 
+  width: 400px;
+}
+.second-part h3{
+  font-size: 28px;
+  font-weight: 500;
+  /* padding-top: 10px; */
+  padding-left: 40px;
+}
+
+.in{
+  width: 500px;
+  height: 60px;
+  /* background-color: red; */
+  display: flex;
+  margin-left: 40px;
+  
+}
+.name{
+  width: 50%;
+  height: inherit;
+  /* background-color: aqua; */
+  
+}
+.email{
+  width: 50%;
+  height: inherit;
+  /* background-color: yellow; */
+  
+  
+}
+.name label{
+  font-size: 12px;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.name input{
+  margin-top: 20px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+  width: 90%;
+  background-color: rgba(195, 199, 202, 0.879);
+  color: white;
+}
+
+
+.email label{
+  font-size: 12px;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.email input{
+  margin-top: 20px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+  width: 90%;
+  background-color: rgba(195, 199, 202, 0.879);
+  color: white;
+}
+
+.subject{
+  width: 500px;
+  margin-left: 40px;
+  /* background-color: red; */
+  height: 60px;
+  margin-top: 20px;
+}
+.subject label{
+  font-size: 12px;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  
+}
+.subject input{
+  margin-top: 20px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+  width: 95%; 
+  background-color: rgba(195, 199, 202, 0.879);
+  color: white;
+}
+
+
+.message{
+  width: 500px;
+  margin-left: 40px;
+  /* background-color: red; */
+  height: 60px;
+  margin-top: 20px;
+}
+.message label{
+  font-size: 12px;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.message textarea{
+  margin-top: 20px;
+  height: 80px;
+  /* background-color: transparent; */
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* padding-bottom: 5px; */
+  width: 95%; 
+  background-color: rgba(195, 199, 202, 0.879);
+  color: white;
+}
+.message textarea::placeholder{
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.submit-btn{
+  margin-top: 100px;
+  margin-left: 40px;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 0;
+  background-color: #09f1d2;
+  color: white;
+
+}
+.submit-btn:hover{
+  background-color: transparent;
+  transition-duration: 0.2s;
+  border: 2px solid black;
+}
+.error-p{
+  color: red;
+  font-size: 12px;
+}
