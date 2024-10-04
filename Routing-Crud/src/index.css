@@ -1,0 +1,58 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#link{
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-left: 30px;
+}
+input{
+  height: 35px;
+  width: 250px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+#bt1{
+  height: 35px;
+  width: 150px;
+  background-color:blue;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#bt2{
+  height: 35px;
+  width: 150px;
+  background-color:red;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#bt3{
+  height: 35px;
+  width: 150px;
+  background-color: green;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+table{
+  text-align: center;
+  font-size: 20px;
+}
+th{
+  padding: 7px;
+}
+td{
+  padding: 5px;
+}
