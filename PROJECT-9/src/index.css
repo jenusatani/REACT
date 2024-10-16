@@ -1,0 +1,196 @@
+center {
+  max-width: 900px; 
+  margin: 40px auto;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(25px);
+  border-radius: 18px; 
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5); 
+  font-family: 'Poppins', sans-serif;
+  color: #eaeaea;
+  transition: all 0.4s ease;
+}
+
+#h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #3f5efb, #fc466b); 
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); 
+}
+
+
+input[type="text"], input[type="date"], select {
+  width: calc(100% - 40px);
+  padding: 15px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: rgba(0, 153, 255, 0.5);
+  font-size: 18px; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+  outline: none;
+}
+
+input[type="text"]::placeholder, input[type="date"]::placeholder, select::placeholder {
+  color: rgba(0, 153, 255, 0.5);
+  font-weight: 900;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 12px rgba(0, 153, 255, 0.6); 
+  border: 1px solid rgba(0, 153, 255, 0.5);
+}
+
+
+button {
+  width: 100%; 
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 15px 0;
+  margin: 15px 0;
+  border: 2px solid #1abc9c;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 153, 255, 0.3); 
+}
+
+button:hover {
+  background-color: #1abc9c;
+  color: #fff;
+  transform: translateY(-3px); 
+  box-shadow: 0 8px 30px rgba(0, 153, 255, 0.5); 
+}
+
+
+#bt2, #bt3 {
+  padding: 10px 20px; 
+  border-radius: 8px;
+}
+
+#bt2 {
+  background-color: rgba(231, 76, 60, 0.9);
+}
+
+#bt2:hover {
+  background-color: rgba(192, 57, 43, 1);
+}
+
+#bt3 {
+  background-color: rgba(241, 196, 15, 0.9);
+}
+
+#bt3:hover {
+  background-color: rgba(243, 156, 18, 1);
+}
+
+
+#bt1 {
+  display: block;
+  background: linear-gradient(45deg, #3f5efb, #fc466b);
+  color: #fff;
+  padding: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#bt1:hover {
+  background: linear-gradient(45deg, #fc466b, #3f5efb); 
+  box-shadow: 0 6px 20px rgba(63, 94, 251, 0.5);
+}
+
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 30px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.08); 
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(31, 38, 135, 0.2);
+}
+
+thead th {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fc466b;
+  padding: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+tbody td {
+  padding: 20px;
+  font-size: 16px;
+  color: rgba(63, 94, 251, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  text-align: left;
+  font-weight: 900;
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02); 
+  transition: all 0.3s ease;
+}
+
+
+.completed-task-row {
+  background-color: rgba(46, 204, 113, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+
+#upcoming-tasks, #completed-tasks {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25); 
+}
+
+
+@media (max-width: 768px) {
+  input[type="text"], input[type="date"], select {
+      width: 100%;
+      font-size: 16px;
+  }
+
+  button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  table {
+      font-size: 14px;
+  }
+
+  thead th {
+      font-size: 16px;
+  }
+
+  tbody td {
+      font-size: 14px;
+      padding: 16px;
+  }
+}
