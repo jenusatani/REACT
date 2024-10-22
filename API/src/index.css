@@ -1,0 +1,70 @@
+/* Center the content */
+center {
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+/* Styling for input fields */
+input[type="text"],
+input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons style */
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* List item container */
+ul.item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    margin: 10px auto;
+}
+
+li {
+    margin: 5px 0;
+}
+
+li#l1 {
+    font-weight: bold;
+}
+
+/* Align buttons inside list items */
+button#bt2,
+button#bt3 {
+    margin-right: 5px;
+    background-color: #28a745;
+}
+
+button#bt3 {
+    background-color: #dc3545;
+}
+
+button#bt2:hover {
+    background-color: #218838;
+}
+
+button#bt3:hover {
+    background-color: #c82333;
+}
