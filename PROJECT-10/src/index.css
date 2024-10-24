@@ -1,0 +1,199 @@
+/* Root styles: Premium palette, transitions, and fonts */
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #E74C3C;
+    --accent-color: #F39C12;
+    --background-color: #ECF0F1;
+    --text-color: #2C3E50;
+    --border-color: #BDC3C7;
+    --button-hover-scale: 1.08;
+    --font-family: 'Poppins', sans-serif;
+    --font-bold: 'Poppins', sans-serif;
+}
+
+/* Global reset and smooth transitions */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Heading style: Luxurious typography */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Animation for heading */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Main container: Centered, elegant shadow */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-100px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Luxurious section containers */
+.inner-1, .inner-2 {
+    flex-basis: 48%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inner-1:hover, .inner-2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Circle for money count: Premium look with gold touch */
+.circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f4e2d8, var(--accent-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.moneyadd {
+    font-size: 3.5rem;
+    color: #2C3E50 ;
+    font-weight: bold;
+    font-family: var(--font-bold);
+    letter-spacing: 2px;
+}
+
+/* Input field styling: Modern, sleek inputs */
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+}
+
+/* Button styles: Classy, with hover effects */
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: var(--font-bold);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(var(--button-hover-scale));
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Secondary button (debit) */
+.money-debit-btn {
+    background-color: var(--secondary-color);
+}
+
+.money-debit-btn:hover {
+    background-color: #C0392B;
+}
+
+/* Table: Refined, smooth appearance */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+th, td {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.3s ease;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #F2F3F4;
+}
+
+/* Table responsiveness */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .inner-1, .inner-2 {
+        flex-basis: 100%;
+    }
+}
