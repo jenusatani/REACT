@@ -1,0 +1,21 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input{
+  height: 40px;
+  width: 300px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 2px solid ;
+  border: 2px solid;
+}
+button{
+  height: 40px;
+  width: 200px;
+  font-size: 17px;
+  border-radius: 8px;
+
+}
