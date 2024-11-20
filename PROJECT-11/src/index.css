@@ -1,0 +1,308 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(120deg, #9affda, #f9fac4 50%, #fbc2eb);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: backgroundAnimation 6s infinite alternate;
+  }
+  
+  /* Background animation */
+ 
+  /* Main container */
+  .signup-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem 4.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 10000%;
+    max-width: 500px;
+    text-align: left;
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+    left: -100px;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Title styling */
+  .signup-container h2 {
+    margin-bottom: 1.5rem;
+    color: #444;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    animation: slideIn 1s ease-out;
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 1.5rem;
+    animation: bounceIn 1.3s ease-in-out;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    70% {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Input focus state */
+  .form-group input:focus {
+    border-color: #f77f00;
+    outline: none;
+    box-shadow: 0 0 8px rgba(247, 127, 0, 0.3);
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Link styling */
+  a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #6a11cb;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #2575fc;
+  }
+  
+  /* Responsive layout */
+  @media screen and (max-width: 600px) {
+    .signup-container {
+      padding: 1.5rem;
+    }
+  }
+
+
+
+
+  /* Dashboard Container */
+  .task-inputs {
+    background: #ffffff;
+    color: #333;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 10000%;
+    max-width: 450px; /* Ideal width for forms */
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    left: -100px;
+  }
+  
+  /* Title */
+  h2 {
+    color: #1e3c72;
+    font-size: 1.8rem; /* Professional header size */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Input Fields */
+  .task-field,
+  .priority-field {
+    width: 90%; /* Full width of the form container */
+    padding: 0.8rem 1rem; /* Comfortable padding for readability */
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .task-field:focus,
+  .priority-field:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 8px rgba(42, 82, 152, 0.3);
+    outline: none;
+  }
+  
+  /* Button Styles */
+  .task-btn {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem; /* Perfect button height */
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; /* Full width button */
+  }
+  
+  .task-btn:hover {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    transform: scale(1.05);
+  }
+  
+  .task-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Table Styling */
+  .task-table {
+    width: 1000%;
+    max-width: 900px; /* Optimized for readability */
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    right: 295px;
+  }
+  
+  .task-table thead {
+    background: #2a5298;
+    color: #fff;
+    font-size: 1.1rem; /* Slightly larger for header emphasis */
+  }
+  
+  .task-table th,
+  .task-table td {
+    padding: 1rem; /* Comfortable spacing between text */
+    text-align: left;
+    font-size: 0.95rem; /* Ideal size for table text */
+    color: #333;
+  }
+  
+  .task-table tbody tr:nth-child(even) {
+    background: #f9f9f9; /* Alternating row colors for better readability */
+  }
+  
+  .task-table tbody tr:hover {
+    background: rgba(42, 82, 152, 0.1);
+  }
+  
+  .task-table tbody td button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem; /* Button sizes for table actions */
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Edit and Delete Buttons */
+  .edit-btn {
+    background: #ffbe76;
+    color: #fff;
+    border: none;
+  }
+  
+  .edit-btn:hover {
+    background: #ffa502;
+  }
+  
+  .delete-btn {
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+  }
+  
+  .delete-btn:hover {
+    background: #ff3f3f;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .task-inputs {
+      width: 90%; /* Slightly smaller for mobile devices */
+      padding: 1.5rem;
+    }
+  
+    .task-table {
+      font-size: 0.9rem; /* Adjust text for smaller screens */
+    }
+  
+    .task-table th,
+    .task-table td {
+      padding: 0.8rem;
+    }
+  }
+  
+  
