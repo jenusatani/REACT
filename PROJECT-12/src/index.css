@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6c63ff, #9c27b0); 
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+
+.signup-container {
+  width: 10000%;
+  max-width: 350px;
+  padding: 30px;
+  background: #ffffff; 
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333333;
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+  right: 50px;
+}
+
+
+.signup-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6c63ff; 
+}
+
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: #f9fafb;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+  outline: none;
+  transition: all 0.3s ease;
+  position: relative;
+  left: -10px;
+}
+
+.input-group input:focus {
+  border-color: #6c63ff;
+  background: #eef2ff;
+  box-shadow: 0px 4px 6px rgba(108, 99, 255, 0.3);
+}
+
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #6c63ff, #ab47bc);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: buttonPulse 2s infinite;
+}
+
+.signup-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(171, 71, 188, 0.4);
+}
+
+
+.google-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.google-signin:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.google-signin img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.footer a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonPulse {
+  0%, 100% {
+    box-shadow: 0px 0px 10px rgba(108, 99, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0px 0px 20px rgba(108, 99, 255, 0.8);
+  }
+}
+
+
+@media (max-width: 500px) {
+  .signup-container {
+    padding: 20px;
+  }
+
+  .signup-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+  }
+
+  .signup-btn,
+  .google-signin {
+    font-size: 0.9rem;
+  }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); 
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+
+.dashboard-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  color: #333333;
+}
+
+
+.dashboard-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #6a11cb; 
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.welcome-box {
+  padding: 20px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  animation: bounceIn 1.5s ease;
+}
+
+
+.welcome-box h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+.welcome-box p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+
+.dashboard-container .btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #6a11cb, #2575fc); 
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-container .btn:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb); 
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px rgba(42, 117, 252, 0.4);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 30px;
+  }
+
+  .dashboard-container h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-box p {
+    font-size: 1rem;
+  }
+}
