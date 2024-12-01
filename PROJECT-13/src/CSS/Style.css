@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Vertical Navbar Styling */
+.navbar {
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  align-items: flex-start; /* Align links to the left */
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
+  padding: 1rem;
+  width: 200px; /* Fixed width for the navbar */
+  height: 100vh; /* Full height */
+  position: fixed; /* Fixed to the left side */
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1rem;
+  width: 100%; /* Full width for links */
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #ffffff;
+  color: #06b6d4;
+  border-radius: 0 10px 10px 0; /* Rounded corners on hover */
+}
+
+/* Record Container Styling */
+.record-container {
+  margin-left: 200px; /* Offset to accommodate the navbar */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  background: #f3f4f6;
+  min-height: 100vh; /* Ensure container spans full height */
+}
+
+/* Individual Record Item */
+.record-item {
+  list-style: none;
+  width: 280px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.record-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Record Image */
+.record-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Ensure images fit their container without distortion */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.record-item:hover .record-image {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+/* Record Content */
+.record-title,
+.record-category,
+.record-price {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: #333333;
+}
+
+.record-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.record-category {
+  font-size: 1rem;
+  color: #555555;
+}
+
+.record-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: pageFadeIn 1s ease-in-out;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
